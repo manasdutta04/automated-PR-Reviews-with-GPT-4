@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flip a Coin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="wrapper">
+      <h1>Flip a Coin</h1>
+
+      <div class="coin-area">
+        <div class="coin-container">
+          <div id="coin" class="coin" aria-live="polite" role="img" aria-label="Coin showing Heads">
+            <div class="face front" aria-hidden="true">Heads</div>
+            <div class="face back" aria-hidden="true">Tails</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="flipBtn" class="btn primary" aria-label="Flip the coin">Flip</button>
+        <button id="resetBtn" class="btn" aria-label="Reset the game">Reset</button>
+      </div>
+
+      <section class="stats" role="status" aria-live="polite">
+        <div class="stat"><span>Heads</span><strong id="headsCount">0</strong></div>
+        <div class="stat"><span>Tails</span><strong id="tailsCount">0</strong></div>
+        <div class="stat"><span>Total</span><strong id="totalCount">0</strong></div>
+      </section>
+
+      <p id="resultText" class="result">Press Flip to start</p>
+    </main>
+
+    <script src="./script.js" defer></script>
+  </body>
+  </html>
+
+
